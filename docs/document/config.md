@@ -62,17 +62,9 @@
     {
       "protocol": "vmess",
       "settings": {
-        "vnext": [
-          {
-            "address": "server", // 服务器地址，请修改为你自己的服务器 ip 或域名
-            "port": 10086, // 服务器端口
-            "users": [
-              {
-                "id": "b831381d-6324-4d53-ad4f-8cda48b30811" // 记得替换这个字段，使用 `xray uuid` 或 `uuidgen` 生成
-              }
-            ]
-          }
-        ]
+        "address": "server", // 服务器地址，请修改为你自己的服务器 ip 或域名
+        "port": 10086, // 服务器端口
+        "id": "b831381d-6324-4d53-ad4f-8cda48b30811" // 记得替换这个字段，使用 `xray uuid` 或 `uuidgen` 生成
       }
     },
     {

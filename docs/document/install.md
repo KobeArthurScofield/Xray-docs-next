@@ -4,14 +4,18 @@
 
 Xray 在以下平台中可用：
 
-- Windows 7 及之后版本（x86 / amd64 / arm32 / arm64）；
-  - Windows 7 中使用 1.8.4、1.8.6 的常规版本以及 1.8.18 以后的 `win7` 版本需要系统安装有 **KB4474419** 更新方可使用；推荐同时安装 KB4490628 以便联网后接受后续的操作系统安全更新。
-  - 从 v25 开始，在 Windows 7 上运行 `win7` 版本只需安装 SP1 即可正常运行，但对联网系统而言仍然强烈建议安装后续操作系统安全更新。
-- macOS 10.10 Yosemite 及之后版本（amd64 / arm64）；
-- Linux 2.6.23 及之后版本（x86 / amd64 / arm / arm64 / mips64 / mips / ppc64 / s390x / riscv64）；
+- Windows 7 及之后版本（x86 / amd64 / arm64）；
+  - Windows 7 中使用 1.8.4、1.8.6 的常规版本以及 1.8.18 以后的 `win7` 版本需要系统安装有 **KB4474419** 更新方可使用；推荐同时安装 KB4490628 以便联网后接受后续的操作系统安全更新；
+  - 从 v25 开始，在 Windows 7 上运行 `win7` 版本只需安装 SP1 即可正常运行，但对联网系统而言仍然强烈建议安装后续操作系统安全更新；
+  - 从 v26 开始，在 Windows 7 上运行 `win7` 版本需安装 2016 年四月前发布的更新或 KB3125574（便利性汇总更新）。安装特定的少数更新（如 KB2533623）也是可以运行的。
+- macOS 12 Monterey 及之后版本（amd64 / arm64）；
+- Linux 3.2 及之后版本（x86 / amd64 / arm / arm64 / mips64 / mips / ppc64 / s390x / riscv64）；
   - 包括但不限于 Debian 7 / 8、Ubuntu 12.04 / 14.04 及后续版本、CentOS 7 / 8、Arch Linux 等；
-- FreeBSD (x86 / amd64)；
-- OpenBSD (x86 / amd64)；
+  - s390x (IBM Z) 需自行编译。
+- FreeBSD (x86 / amd64 / arm64)；
+  - 由于缺乏该系统的活跃维护，目前不提供预先编译的二进制文件，使用前需自行编译。
+- OpenBSD (x86 / amd64 / arm64)；
+  - 由于缺乏该系统的活跃维护，目前不提供预先编译的二进制文件，使用前需自行编译。
 
 ## 下载 Xray
 
@@ -49,10 +53,11 @@ Xray 提供两种验证方式：
 
 * One Click
   - [Xray-REALITY](https://github.com/zxcvos/Xray-script), [xray-reality](https://github.com/sajjaddg/xray-reality), [reality-ezpz](https://github.com/aleskxyz/reality-ezpz)
-  - [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey), [XTool](https://github.com/LordPenguin666/XTool)
+  - [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey), [XTool](https://github.com/LordPenguin666/XTool), [VPainLess](https://github.com/vpainless/vpainless)
   - [v2ray-agent](https://github.com/mack-a/v2ray-agent), [Xray_onekey](https://github.com/wulabing/Xray_onekey), [ProxySU](https://github.com/proxysu/ProxySU)
 
 * Magisk
+  - [NetProxy-Magisk](https://github.com/Fanju6/NetProxy-Magisk)
   - [Xray4Magisk](https://github.com/Asterisk4Magisk/Xray4Magisk)
   - [Xray_For_Magisk](https://github.com/E7KMbb/Xray_For_Magisk)
 
@@ -129,24 +134,28 @@ ghcr.io/xtls/xray-core 版本映像：
   - [luci-app-xray](https://github.com/yichya/luci-app-xray) ([openwrt-xray](https://github.com/yichya/openwrt-xray))
 - Asuswrt-Merlin
   - [XRAYUI](https://github.com/DanielLavrushin/asuswrt-merlin-xrayui)
+  - [fancyss](https://github.com/hq450/fancyss)
 - Windows
   - [v2rayA](https://github.com/v2rayA/v2rayA)
   - [v2rayN](https://github.com/2dust/v2rayN)
   - [Furious](https://github.com/LorenEteval/Furious)
   - [Invisible Man - Xray](https://github.com/InvisibleManVPN/InvisibleMan-XRayClient)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
+  - [GenyConnect](https://github.com/genyleap/GenyConnect)
 - Android
   - [v2rayNG](https://github.com/2dust/v2rayNG)
   - [X-flutter](https://github.com/XTLS/X-flutter)
   - [SaeedDev94/Xray](https://github.com/SaeedDev94/Xray)
   - [SimpleXray](https://github.com/lhear/SimpleXray)
+  - [XrayFA](https://github.com/Q7DF1/XrayFA)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
+  - [NetProxy-Magisk](https://github.com/Fanju6/NetProxy-Magisk)
 - iOS & macOS arm64 & tvOS
-  - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215) ([tvOS](https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274))
-  - [FoXray](https://apps.apple.com/app/foxray/id6448898396)
+  - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215) ([Happ RU](https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973)) ([tvOS](https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274))
   - [Streisand](https://apps.apple.com/app/streisand/id6450534064)
+  - [OneXray](https://github.com/OneXray/OneXray)
 - macOS arm64 & x64
-  - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215)
+  - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215) ([Happ RU](https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973))
   - [v2rayA](https://github.com/v2rayA/v2rayA)
   - [v2rayN](https://github.com/2dust/v2rayN)
   - [V2rayU](https://github.com/yanue/V2rayU)
@@ -155,6 +164,7 @@ ghcr.io/xtls/xray-core 版本映像：
   - [OneXray](https://github.com/OneXray/OneXray)
   - [GoXRay](https://github.com/goxray/desktop)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
+  - [GenyConnect](https://github.com/genyleap/GenyConnect)
 - Linux
   - [v2rayA](https://github.com/v2rayA/v2rayA)
   - [v2rayN](https://github.com/2dust/v2rayN)
@@ -162,6 +172,7 @@ ghcr.io/xtls/xray-core 版本映像：
   - [GorzRay](https://github.com/ketetefid/GorzRay)
   - [GoXRay](https://github.com/goxray/desktop)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
+  - [GenyConnect](https://github.com/genyleap/GenyConnect)
 
 ## UUID 生成器
 

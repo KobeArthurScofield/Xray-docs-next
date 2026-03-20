@@ -47,7 +47,7 @@ CGO_ENABLED=0 go build -o xray -trimpath -buildvcs=false -ldflags "-s -w -buildi
 运行以上命令会在目录下生成 xray 可执行文件。
 
 ::: tip
-如果需要编译可以进行 debug 的程序,即可以用 dlv 附加到运行的程序进行调试, 请去掉 ldflags 中的 '-w -s' 选项.
+如果需要编译可以进行 debug 的程序，即可以用 dlv 附加到运行的程序进行调试, 请去掉 ldflags 中的 '-w -s' 选项。
 
 -w 禁止生成 debug 信息。使用该选项后，将无法使用 gdb 进行调试。
 -s 禁用符号表
@@ -78,6 +78,18 @@ go build -o xray -trimpath -buildvcs=false -ldflags "-s -w -buildid=" ./main
 
 ```bash
 CGO_ENABLED=0 go build -o xray -trimpath -buildvcs=false -gcflags="all=-l=4" -ldflags="-X github.com/xtls/xray-core/core.build=<short commit ID> -s -w -buildid=" -v ./main
+```
+
+其中对 Windows ARM64，应该添加以下环境变量：
+
+```bash
+GOARM64=v8.1
+```
+
+其中对 macOS ARM64，应该添加以下环境变量：
+
+```bash
+GOARM64=v8.4
 ```
 
 其中对 MIPS/MIPSLE 架构，应该使用：

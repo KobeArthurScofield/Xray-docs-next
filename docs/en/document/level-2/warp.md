@@ -194,18 +194,10 @@ Add the following to your existing routing rules:
          "tag":"proxy",
          "protocol":"vmess",
          "settings":{
-            "vnext":[
-               {
-                  "address":"My_Server_IP",
-                  "port":My_Port,
-                  "users":[
-                     {
-                        "id":"My_UUID",
-                        "security":"auto"
-                     }
-                  ]
-               }
-            ]
+            "address":"My_Server_IP",
+            "port":My_Port,
+            "id":"My_UUID",
+            "security":"auto"
          },
          "streamSettings":{
             "network":"tcp"

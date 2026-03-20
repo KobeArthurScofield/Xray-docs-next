@@ -4,14 +4,18 @@
 
 Xray is available on the following platforms:
 
-- Windows 7 and later (x86 / amd64 / arm32 / arm64);
+- Windows 7 and later (x86 / amd64 / arm64);
   - To use regular versions 1.8.4, 1.8.6, and `win7` versions after 1.8.18 on Windows 7, the system must have the **KB4474419** update installed; it is recommended to also install KB4490628 to receive subsequent operating system security updates after connecting to the internet.
   - Starting from v25, running the `win7` version on Windows 7 only requires SP1 to function normally, but installing subsequent OS security updates is still strongly recommended for networked systems.
-- macOS 10.10 Yosemite and later (amd64 / arm64);
-- Linux 2.6.23 and later (x86 / amd64 / arm / arm64 / mips64 / mips / ppc64 / s390x / riscv64);
+  - Starting from v26, running the `win7` version on Windows 7 requires Windows updates released before April 2016 are installed, or installing KB3125574 (Convenience Rollup). Just installing a few key updates might also work (e.g. KB2533623).
+- macOS 12 Monterey and later (amd64 / arm64);
+- Linux 3.2 and later (x86 / amd64 / arm / arm64 / mips64 / mips / ppc64 / s390x / riscv64);
   - Including but not limited to Debian 7 / 8, Ubuntu 12.04 / 14.04 and later, CentOS 7 / 8, Arch Linux, etc.;
-- FreeBSD (x86 / amd64);
-- OpenBSD (x86 / amd64);
+  - s390x (IBM Z) requires compiling manually.
+- FreeBSD (x86 / amd64 / arm64);
+  - Due to lack of active maintenance on this OS, pre-built binaries are not provided. Manually compiling is required.
+- OpenBSD (x86 / amd64 / arm64);
+  - Due to lack of active maintenance on this OS, pre-built binaries are not provided. Manually compiling is required.
 
 ## Download Xray
 
@@ -47,10 +51,11 @@ Xray provides two verification methods:
 
 - One Click
   - [Xray-REALITY](https://github.com/zxcvos/Xray-script), [xray-reality](https://github.com/sajjaddg/xray-reality), [reality-ezpz](https://github.com/aleskxyz/reality-ezpz)
-  - [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey), [XTool](https://github.com/LordPenguin666/XTool)
+  - [Xray_bash_onekey](https://github.com/hello-yunshu/Xray_bash_onekey), [XTool](https://github.com/LordPenguin666/XTool), [VPainLess](https://github.com/vpainless/vpainless)
   - [v2ray-agent](https://github.com/mack-a/v2ray-agent), [Xray_onekey](https://github.com/wulabing/Xray_onekey), [ProxySU](https://github.com/proxysu/ProxySU)
 
 - Magisk
+  - [NetProxy-Magisk](https://github.com/Fanju6/NetProxy-Magisk)
   - [Xray4Magisk](https://github.com/Asterisk4Magisk/Xray4Magisk)
   - [Xray_For_Magisk](https://github.com/E7KMbb/Xray_For_Magisk)
 
@@ -126,24 +131,28 @@ ghcr.io/xtls/xray-core version image:
   - [luci-app-xray](https://github.com/yichya/luci-app-xray) ([openwrt-xray](https://github.com/yichya/openwrt-xray))
 - Asuswrt-Merlin
   - [XRAYUI](https://github.com/DanielLavrushin/asuswrt-merlin-xrayui)
+  - [fancyss](https://github.com/hq450/fancyss)
 - Windows
   - [v2rayA](https://github.com/v2rayA/v2rayA)
   - [v2rayN](https://github.com/2dust/v2rayN)
   - [Furious](https://github.com/LorenEteval/Furious)
   - [Invisible Man - Xray](https://github.com/InvisibleManVPN/InvisibleMan-XRayClient)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
+  - [GenyConnect](https://github.com/genyleap/GenyConnect)
 - Android
   - [v2rayNG](https://github.com/2dust/v2rayNG)
   - [X-flutter](https://github.com/XTLS/X-flutter)
   - [SaeedDev94/Xray](https://github.com/SaeedDev94/Xray)
   - [SimpleXray](https://github.com/lhear/SimpleXray)
+  - [XrayFA](https://github.com/Q7DF1/XrayFA)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
+  - [NetProxy-Magisk](https://github.com/Fanju6/NetProxy-Magisk)
 - iOS & macOS arm64 & tvOS
-  - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215) ([tvOS](https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274))
-  - [FoXray](https://apps.apple.com/app/foxray/id6448898396)
+  - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215) ([Happ RU](https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973)) ([tvOS](https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274))
   - [Streisand](https://apps.apple.com/app/streisand/id6450534064)
+  - [OneXray](https://github.com/OneXray/OneXray)
 - macOS arm64 & x64
-  - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215)
+  - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215) ([Happ RU](https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973))
   - [v2rayA](https://github.com/v2rayA/v2rayA)
   - [v2rayN](https://github.com/2dust/v2rayN)
   - [V2rayU](https://github.com/yanue/V2rayU)
@@ -152,6 +161,7 @@ ghcr.io/xtls/xray-core version image:
   - [OneXray](https://github.com/OneXray/OneXray)
   - [GoXRay](https://github.com/goxray/desktop)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
+  - [GenyConnect](https://github.com/genyleap/GenyConnect)
 - Linux
   - [v2rayA](https://github.com/v2rayA/v2rayA)
   - [v2rayN](https://github.com/2dust/v2rayN)
@@ -159,6 +169,7 @@ ghcr.io/xtls/xray-core version image:
   - [GorzRay](https://github.com/ketetefid/GorzRay)
   - [GoXRay](https://github.com/goxray/desktop)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
+  - [GenyConnect](https://github.com/genyleap/GenyConnect)
 
 ## UUID Generator
 

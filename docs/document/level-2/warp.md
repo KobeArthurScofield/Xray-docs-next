@@ -194,18 +194,10 @@ bash -c "$(curl -L wgcf-cli.vercel.app)"
          "tag":"proxy",
          "protocol":"vmess",
          "settings":{
-            "vnext":[
-               {
-                  "address":"我的IP",
-                  "port":我的端口,
-                  "users":[
-                     {
-                        "id":"我的UUID",
-                        "security":"auto"
-                     }
-                  ]
-               }
-            ]
+            "address":"我的IP",
+            "port":我的端口,
+            "id":"我的UUID",
+            "security":"auto"
          },
          "streamSettings":{
             "network":"tcp"
