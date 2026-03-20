@@ -9,9 +9,9 @@ Xray is available on the following platforms:
   - Starting from v25, running the `win7` version on Windows 7 only requires SP1 to function normally, but installing subsequent OS security updates is still strongly recommended for networked systems.
   - Starting from v26, running the `win7` version on Windows 7 requires Windows updates released before April 2016 are installed, or installing KB3125574 (Convenience Rollup). Just installing a few key updates might also work (e.g. KB2533623).
 - macOS 12 Monterey and later (amd64 / arm64);
-- Linux 3.2 and later (x86 / amd64 / arm / arm64 / mips64 / mips / ppc64 / s390x / riscv64);
+- Linux 3.2 and later (x86 / amd64 / arm / arm64 / mips64 / mips / ppc64 / s390x / riscv64 / loong64);
   - Including but not limited to Debian 7 / 8, Ubuntu 12.04 / 14.04 and later, CentOS 7 / 8, Arch Linux, etc.;
-  - s390x (IBM Z) requires compiling manually.
+  - Pre-built binaries for s390x (IBM Z) are not provided. Manually compiling is required.
 - FreeBSD (x86 / amd64 / arm64);
   - Due to lack of active maintenance on this OS, pre-built binaries are not provided. Manually compiling is required.
 - OpenBSD (x86 / amd64 / arm64);
