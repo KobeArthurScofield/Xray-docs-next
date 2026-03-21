@@ -9,9 +9,8 @@ Xray 在以下平台中可用：
   - 从 v25 开始，在 Windows 7 上运行 `win7` 版本只需安装 SP1 即可正常运行，但对联网系统而言仍然强烈建议安装后续操作系统安全更新；
   - 从 v26 开始，在 Windows 7 上运行 `win7` 版本需安装 2016 年四月前发布的更新或 KB3125574（便利性汇总更新）。安装特定的少数更新（如 KB2533623）也是可以运行的。
 - macOS 12 Monterey 及之后版本（amd64 / arm64）；
-- Linux 3.2 及之后版本（x86 / amd64 / armv7 / arm64 / mips(le) / ppc64(le) / riscv64 / loong64）；
-  - 包括但不限于 Debian 7 / 8、Ubuntu 12.04 / 14.04 及后续版本、CentOS 7 / 8、Arch Linux 等；
-  - s390x (IBM Z) 需自行编译。
+- Linux 3.2 及之后版本（x86 / amd64 / armv7 / arm64 / mips(le) / ppc64(le) / riscv64 / loong64 / s390x）；
+  - 包括但不限于 Debian 7 / 8、Ubuntu 12.04 / 14.04 及后续版本、CentOS 7 / 8、Arch Linux 等。
 - FreeBSD；
   - 由于缺乏该系统的活跃维护，目前不提供预先编译的二进制文件，使用前需自行编译。
 - OpenBSD；

@@ -80,12 +80,6 @@ go build -o xray -trimpath -buildvcs=false -ldflags "-s -w -buildid=" ./main
 CGO_ENABLED=0 go build -o xray -trimpath -buildvcs=false -gcflags="all=-l=4" -ldflags="-X github.com/xtls/xray-core/core.build=<short commit ID> -s -w -buildid=" -v ./main
 ```
 
-其中对 Windows ARM64，应该添加以下环境变量：
-
-```bash
-GOARM64=v8.1
-```
-
 其中对 macOS ARM64，应该添加以下环境变量：
 
 ```bash
