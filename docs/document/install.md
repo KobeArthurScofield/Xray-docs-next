@@ -4,15 +4,16 @@
 
 Xray 在以下平台中可用：
 
-- Windows 7 及之后版本（x86 / x86-64 / AArch64）；
+- Windows 7 及之后版本（x86 / x86-64 / AArch64-A）；
   - Windows 7 中使用 1.8.4、1.8.6 的常规版本以及 1.8.18 以后的 `win7` 版本需要系统安装有 **KB4474419** 更新方可使用；推荐同时安装 KB4490628 以便联网后接受后续的操作系统安全更新；
   - 从 v25 开始，在 Windows 7 上运行 `win7` 版本只需安装 SP1 即可正常运行，但对联网系统而言仍然强烈建议安装后续操作系统安全更新；
   - 从 v26 开始，在 Windows 7 上运行 `win7` 版本需安装 2016 年四月前发布的更新或 KB3125574（便利性汇总更新）。安装特定的少数更新（如 KB2533623）也有可能能运行，但是随着时间推移其兼容性可能会有所变化。
-- macOS 12 Monterey 及之后版本（x86-64 / AArch64）；
-- Linux 3.2 及之后版本（x86 / x86-64 / ARMv7-A / AArch64 / PowerISA 64 （大端序/小端序） / RISCV 64 / LoongArch 64 / IBM z）；
+  - 使用 Windows 8/8.1、Windows Server 2012 (R2) 或使用早于 Haswell/Bulldozer 的 CPU：应该使用 `win7` 版本。
+- macOS 12 Monterey 及之后版本（x86-64 / AArch64-A）；
+- Linux 3.2 及之后版本（x86 / x86-64 / ARMv7-A / AArch64-A / Power ISA 64 （大端序/小端序） / RISC-V 64 / LoongArch 64 / z/Architecture）；
   - 包括但不限于 Debian 7 / 8、Ubuntu 12.04 / 14.04 及后续版本、CentOS 7 / 8、Arch Linux 等。
-- FreeBSD（x86-64 / AArch64）；
-- OpenBSD（x86-64 / AArch64）；
+- FreeBSD（x86-64 / AArch64-A）；
+- OpenBSD（x86-64 / AArch64-A）；
   - 由于缺乏该系统的活跃维护，目前不提供预先编译的二进制文件，使用前需自行编译。
 
 ## 下载 Xray

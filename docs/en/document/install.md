@@ -4,15 +4,16 @@
 
 Xray is available on the following platforms:
 
-- Windows 7 and later (x86 / x86-64 / AArch64);
+- Windows 7 and later (x86 / x86-64 / AArch64-A);
   - To use regular versions 1.8.4, 1.8.6, and `win7` versions after 1.8.18 on Windows 7, the system must have the **KB4474419** update installed; it is recommended to also install KB4490628 to receive subsequent operating system security updates after connecting to the internet.
   - Starting from v25, running the `win7` version on Windows 7 only requires SP1 to function normally, but installing subsequent OS security updates is still strongly recommended for networked systems.
   - Starting from v26, running the `win7` version on Windows 7 requires Windows updates released before April 2016 are installed, or installing KB3125574 (Convenience Rollup). Just installing a few key updates might also work (e.g. KB2533623), but compatibility may change over time.
-- macOS 12 Monterey and later (x86-64 / AArch64);
-- Linux 3.2 and later (x86 / x86-64 / ARMv7-A / AArch64 / PowerISA 64 (BE/LE) / RISCV 64 / LoongArch 64 / IBM z);
+  - Users using Windows 8/8.1, Windows Server 2012 (R2) or using a CPU before Haswell/Bulldozer: should use `win7` version.
+- macOS 12 Monterey and later (x86-64 / AArch64-A);
+- Linux 3.2 and later (x86 / x86-64 / ARMv7-A / AArch64-A / Power ISA 64 （大端序/小端序） / RISC-V 64 / LoongArch 64 / z/Architecture);
   - Including but not limited to Debian 7 / 8, Ubuntu 12.04 / 14.04 and later, CentOS 7 / 8, Arch Linux, etc.
-- FreeBSD (x86-64 / AArch64);
-- OpenBSD (x86-64 / AArch64);
+- FreeBSD (x86-64 / AArch64-A);
+- OpenBSD (x86-64 / AArch64-A);
   - Due to lack of active maintenance on this OS, pre-built binaries are not provided. Manually compiling is required.
 
 ## Download Xray
