@@ -79,17 +79,30 @@ Use the following command to build (`<short commit ID>` should be replaced with 
 
 ```bash
 CGO_ENABLED=0 go build -o xray -trimpath -buildvcs=false -gcflags="all=-l=4" -ldflags="-X github.com/xtls/xray-core/core.build=<short commit ID> -s -w -buildid=" -v ./main
+```
 
-For macOS ARM64 target, you should add this environment variable:
+For Windows x86-64 target, you should add this environment variable:
+
+```bash
+GOAMD64=v2
+```
+
+For macOS x86-64 target, you should add this environment variable:
+
+```bash
+GOAMD64=v3
+```
+
+For Windows AArch64 target, you should add this environment variable:
+
+```bash
+GOARM64=v8.2
+```
+
+For macOS AArch64 target, you should add this environment variable:
 
 ```bash
 GOARM64=v8.4
-```
-
-For MIPS/MIPSLE architectures, you should use:
-
-```bash
-CGO_ENABLED=0 go build -o xray -trimpath -buildvcs=false -gcflags="-l=4" -ldflags="-X github.com/xtls/xray-core/core.build=<short commit ID> -s -w -buildid=" -v ./main
 ```
 
 ::: warning

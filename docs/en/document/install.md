@@ -4,16 +4,15 @@
 
 Xray is available on the following platforms:
 
-- Windows 7 and later (x86 / amd64 / arm64);
+- Windows 7 and later (x86 / x86-64 / AArch64);
   - To use regular versions 1.8.4, 1.8.6, and `win7` versions after 1.8.18 on Windows 7, the system must have the **KB4474419** update installed; it is recommended to also install KB4490628 to receive subsequent operating system security updates after connecting to the internet.
   - Starting from v25, running the `win7` version on Windows 7 only requires SP1 to function normally, but installing subsequent OS security updates is still strongly recommended for networked systems.
-  - Starting from v26, running the `win7` version on Windows 7 requires Windows updates released before April 2016 are installed, or installing KB3125574 (Convenience Rollup). Just installing a few key updates might also work (e.g. KB2533623).
-- macOS 12 Monterey and later (amd64 / arm64);
-- Linux 3.2 and later (x86 / amd64 / armv7 / arm64 / mips(le) / ppc64(le) / riscv64 / loong64 / s390x);
+  - Starting from v26, running the `win7` version on Windows 7 requires Windows updates released before April 2016 are installed, or installing KB3125574 (Convenience Rollup). Just installing a few key updates might also work (e.g. KB2533623), but compatibility may change over time.
+- macOS 12 Monterey and later (x86-64 / AArch64);
+- Linux 3.2 and later (x86 / x86-64 / ARMv7-A / AArch64 / PowerISA 64 (BE/LE) / RISCV 64 / LoongArch 64 / IBM z);
   - Including but not limited to Debian 7 / 8, Ubuntu 12.04 / 14.04 and later, CentOS 7 / 8, Arch Linux, etc.
-- FreeBSD;
-  - Due to lack of active maintenance on this OS, pre-built binaries are not provided. Manually compiling is required.
-- OpenBSD;
+- FreeBSD (x86-64 / AArch64);
+- OpenBSD (x86-64 / AArch64);
   - Due to lack of active maintenance on this OS, pre-built binaries are not provided. Manually compiling is required.
 
 ## Download Xray
@@ -146,11 +145,12 @@ ghcr.io/xtls/xray-core version image:
   - [XrayFA](https://github.com/Q7DF1/XrayFA)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
   - [NetProxy-Magisk](https://github.com/Fanju6/NetProxy-Magisk)
-- iOS & macOS arm64 & tvOS
+- iOS & macOS AArch64 & tvOS
   - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215) ([Happ RU](https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973)) ([tvOS](https://apps.apple.com/us/app/happ-proxy-utility-for-tv/id6748297274))
   - [Streisand](https://apps.apple.com/app/streisand/id6450534064)
   - [OneXray](https://github.com/OneXray/OneXray)
-- macOS arm64 & x64
+  - [INCY](https://apps.apple.com/en/app/incy/id6756943388)
+- macOS AArch64 & x86-64
   - [Happ](https://apps.apple.com/app/happ-proxy-utility/id6504287215) ([Happ RU](https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973))
   - [v2rayA](https://github.com/v2rayA/v2rayA)
   - [v2rayN](https://github.com/2dust/v2rayN)
@@ -161,6 +161,7 @@ ghcr.io/xtls/xray-core version image:
   - [GoXRay](https://github.com/goxray/desktop)
   - [AnyPortal](https://github.com/AnyPortal/AnyPortal)
   - [GenyConnect](https://github.com/genyleap/GenyConnect)
+  - [INCY](https://apps.apple.com/en/app/incy/id6756943388)
 - Linux
   - [v2rayA](https://github.com/v2rayA/v2rayA)
   - [v2rayN](https://github.com/2dust/v2rayN)
